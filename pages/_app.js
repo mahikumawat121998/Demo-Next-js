@@ -1,8 +1,13 @@
-import '../styles/globals.css'
+import Layout from "./components/Layout";
+import "../styles/globals.css";
+import Intro from "./components/Intro";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />       
+    </Layout>
+  );
 }
-// helloos
 
-export default MyApp
+export default MyApp;
