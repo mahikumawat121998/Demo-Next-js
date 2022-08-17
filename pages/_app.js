@@ -1,16 +1,19 @@
 import '../styles/globals.css'
-import ProductState from './context/ProductState'
+import Layout from "../pages/components/Layout"
+import ProductState from './context/ProductState';
+
 
 function MyApp({ Component, pageProps }) {
-  return(
-    <>
-  <ProductState>
-  <Component {...pageProps} />
-  </ProductState>
-  </>
-    )
 
+  return (<>
+  <ProductState>
+
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </ProductState>
+  </>)
 }
 // helloos
 
-export default MyApp
+export default MyApp;

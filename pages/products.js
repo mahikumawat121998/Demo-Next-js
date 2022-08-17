@@ -10,7 +10,7 @@ const Products = () => {
     const [searchItem , setSearchItem] = useState()
 
     useEffect(()=>{
-     fetchProducts()
+     fetchProducts();
     },[])
 
     const handleChange = (e) => {
@@ -23,7 +23,7 @@ const Products = () => {
         <div  className={styles.searchBox}>
             <Searchbar value={searchItem} handleChange={handleChange}  />
         </div>
-    {products.map((product)=>(
+        {products.map((product)=>(
         <div className={styles.prodcutItem} key={product.id}>
             <Productcard product={product}/>
         </div>
