@@ -1,7 +1,20 @@
 import '../styles/globals.css'
+import ProductState from './context/ProductState'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+
+  return(
+
+    <>
+  <ProductState>
+
+  <Component {...pageProps} />
+  
+  </ProductState>
+  </>
+    )
+
 }
 // helloos
 
