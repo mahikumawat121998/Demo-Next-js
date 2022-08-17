@@ -7,14 +7,21 @@ import productContext from './context/productContext';
 
 const Products = () => {
     const { fetchProducts, products} = useContext(productContext)
+    const [searchItem , setSearchItem] = useState()
+
     useEffect(()=>{
      fetchProducts()
     },[])
+
+    const handleChange = (e) => {
+        setSearchItem(e.target.value)
+    }
+
   return (
     <>
     <div className={styles.container}>
         <div  className={styles.searchBox}>
-            <Searchbar />
+            <Searchbar value={searchItem} handleChange={handleChange}  />
         </div>
     {products.map((product)=>(
         <div className={styles.prodcutItem} key={product.id}>
