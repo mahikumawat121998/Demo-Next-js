@@ -8,10 +8,6 @@ import styles from "../../styles/Productcard.module.css";
 import MyButton from './myButton';
 
 
-
-
-
-
 const Productcard = (props) => {
     const { product } = props
     return (

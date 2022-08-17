@@ -8,19 +8,19 @@ const Navbar = () => {
 
   return (
     <div className={style.container}>
-      <Link href="/">AV0CAD0</Link>
+      <Link href="/">Next Demo</Link>
       <ul className={style.list}>
         <li className={style.listItem}>
-          <Link style={{color:"white"}} className={style.mylink} href="/products/design">DESIGN</Link>
+          <Link style={{color:"white"}} className={style.mylink} href="/">HOME</Link>
         </li>
         <li style={{color:"white"}} className={style.listItem}>
-          <Link href="/products/development">DEVELOPMENT</Link>
+          <Link href="/about">ABOUT</Link>
         </li>
         <li style={{color:"white"}} className={style.listItem}>
-          <Link href="/products/production">PRODUCTION</Link>
+          <Link href="/products">PRODUCT</Link>
         </li>
         <li style={{color:"white"}} className={style.listItem}>
-          <Link href="/products/photography">PHOTOGRAPHY</Link>
+          <Link href="/">FAQ</Link>
         </li>
         <li  className={style.listItem}>
           <Link style={{color:"white"}} href="/contact">CONTACT</Link>

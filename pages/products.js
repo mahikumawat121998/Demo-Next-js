@@ -8,7 +8,7 @@ import productContext from './context/productContext';
 const Products = () => {
     const { fetchProducts, products} = useContext(productContext)
     useEffect(()=>{
-     fetchProducts()
+     fetchProducts();
     },[])
   return (
     <>
@@ -16,7 +16,7 @@ const Products = () => {
         <div  className={styles.searchBox}>
             <Searchbar />
         </div>
-    {products.map((product)=>(
+        {products.map((product)=>(
         <div className={styles.prodcutItem} key={product.id}>
             <Productcard product={product}/>
         </div>
