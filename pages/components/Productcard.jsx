@@ -5,7 +5,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import styles from "../../styles/Productcard.module.css";
-import MyButton from './myButton';
 import { useRouter } from 'next/router'
 import productContext from '../context/productContext';
 
@@ -73,4 +72,4 @@ const Productcard = (props) => {
     )
 }
 
-export default Productcard            
+export default Productcard;            
