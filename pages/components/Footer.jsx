@@ -23,24 +23,36 @@ const Footer = () => {
             <li className={style.li}> <Link href="/contact">Contact Us</Link></li>
           </ul>
         </div>
-         
+
         <div className={style.card}>
           <h3 className={style.cardtitle}>Contact Us</h3>
-           <ul>
+          <ul>
             <li className={style.listItem}>Jaipur, Rajasthan</li>
             <li className={style.listItem}>mahikumawat121998@gmail.com</li>
             <li className={style.listItem}> +91 9828107200</li>
-            </ul>
+          </ul>
         </div>
+
+
         <div className={style.card}>
-          <h3 className={style.cardtitle}>Follow On</h3>
-          <span><Image href="img/facebook.png"/></span>
-          <span><Image href="/img/google.png"/></span>
-          <span><Image href="img/yahoo.png"/></span>            
+        <h3 className={style.cardtitle}>Follow On</h3>
+          <div style={{display:"flex"}}>
+
+            <span className={style.footorItem}>
+              <Image className={style.imgSection} src="/img/facebook.png"  layout='fill' objectFit='contain' />
+
+            </span>
+            <span className={style.footorItem}>
+              <Image className={style.imgSection} src="/img/google.png"  layout='fill' objectFit='contain' /></span>
+
+            <span className={style.footorItem}><Image className={style.imgSection} src="/img/yahoo.png"  layout='fill' objectFit='contain' /></span>
+          </div>
         </div>
+
+
       </Container>
       <div className={style.terms}> &#169;
-      2022 Marktine Technology All Reserved Right
+        2022 Marktine Technology All Reserved Right
       </div>
     </Box>
 

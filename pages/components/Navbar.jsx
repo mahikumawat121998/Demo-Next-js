@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useContext, useState,useEffect } from "react";
 import style from "../../styles/Navbar.module.css";
 import Link from "next/link";
 import { Box } from "@mui/material";
+import productContext from "../context/productContext";
 
 
 const Navbar = () => {
-
+  const {cart ,setCart} = useContext(productContext)
   const [open, setOpen] = useState(false);
+  useEffect(()=>{
+  const abc =  window.localStorage.getItem('cart')
+  setCart(JSON.parse(abc))
+  },[])
+  useEffect(()=>{
+    window.localStorage.setItem('cart',JSON.stringify(cart))
+  },[cart])
 
   return (
     <Box className={style.mainContainer}>
@@ -52,6 +60,11 @@ const Navbar = () => {
           </li>
           <li className={style.menuItem}>
             <Link href="/contact">CONTACT</Link>
+          </li>
+        </ul>
+        <ul  >
+          <li className={style.listItem}>
+          <Link style={{ color: "white" }} href="/cart">CART</Link><span className={style.cartNumber}>{!cart.totalItems?0:cart.totalItems}</span>
           </li>
         </ul>
       </div>

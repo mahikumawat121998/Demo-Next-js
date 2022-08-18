@@ -24,9 +24,9 @@ const Intro = () => {
         <Image
         className={style.myImage}
           src="/img/Avocado.png"
-          layout="fill"
+          layout= "fill"
           objectFit="contain"
-          alt=""
+          alt="Avocodo"
           height="100px"
           width="200px"
         />

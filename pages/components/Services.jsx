@@ -7,8 +7,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Image from 'next/dist/client/image'
 import style from "../../styles/Services.module.css"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+
+
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
@@ -20,8 +20,8 @@ const Services = () => {
         <Box className={style.container}>
             <Container>
                 <div className={style.feature}>
-                <span className={style.featureHeading}>FEATURE</span>
-                <h1>Our Feature & Services</h1>
+                    <span className={style.featureHeading}>FEATURE</span>
+                    <h1>Our Feature & Services</h1>
                 </div>
                 <div className={style.card}>
                     <div className={style.cardItem}>

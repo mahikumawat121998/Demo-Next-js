@@ -75,6 +75,14 @@ color: white;
     transition: all 1s ease;
     color: white;
   }
+
+  .cartNumber{
+    background-color: white;
+    border-radius: 100%;
+    padding: 2px 6px;
+    margin: 5px;
+    color: black;
+  }
   
   @media screen and (max-width: 480px) {
     .container {
@@ -98,4 +106,6 @@ color: white;
       justify-content: space-around;
     }
   }
+
+  
   
