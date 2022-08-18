@@ -14,3 +14,19 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 9.5rem;}
+
+
+.singleProduct{
+    display: flex;
+    padding: 20px;
+}    
+
+.singleProductText{
+    padding: 20px;
+    margin-top: 3rem;
+    margin-left: 20px;
+}
+
+.singleProductText p{
+    width: 500px;
+}

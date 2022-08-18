@@ -5,15 +5,40 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import styles from "../../styles/Productcard.module.css";
-import MyButton from './myButton';;
-
-
-
-
-
+import MyButton from './myButton';
+import { useRouter } from 'next/router'
+import productContext from '../context/productContext';
 
 const Productcard = (props) => {
-    const { product } = props
+    const router = useRouter()
+    const { product } = props;
+    const {cart , setCart} = React.useContext(productContext)
+    function handleAdd(product) {
+        console.log(product.id)
+        let _cart = {...cart}
+        if(!_cart.items){
+          _cart.items = {}
+  
+        }
+        if(!_cart.items[product.id]){
+          _cart.items[product.id] = 1
+        }else{
+          _cart.items[product._id] += 1
+        }
+  
+        if(!_cart.totalItems){
+          _cart.totalItems = 0
+  
+        }
+        _cart.totalItems += 1
+        setCart(_cart)
+        console.log(cart)
+      }
+    const handleClick = (id) =>{
+        console.log(id)
+        router.push({ pathname :'/productDetails',query : { id : id}})
+     
+    }
     return (
         <>
     
@@ -22,15 +47,15 @@ const Productcard = (props) => {
                     <CardMedia
                         component="img"
                         height="140"
-                        image={product.category.image}
+                        image={product.image}
                         alt="product image"
                     />
                     <CardContent style={{ padding: '10px' }}>
                         <Typography gutterBottom variant="h5" component="div">
-                            {product.title}
+                            {product.title.slice(0,40)}...
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            {product.description}
+                            {product.description.slice(0,80)}...
                         </Typography>
                         <Typography className={styles.cardPrice} gutterBottom variant="h6" component="div">
                             Price - ₹{product.price}
@@ -38,8 +63,8 @@ const Productcard = (props) => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <MyButton value={'More Details'} />
-                    <MyButton value={'Add to Cart'} />
+                    <Button onClick={()=>{handleClick(product.id)}}>More Details</Button>
+                    <Button onClick={()=>{handleAdd(product)}}>Add to Cart</Button>
                 </CardActions>
             </Card>
      

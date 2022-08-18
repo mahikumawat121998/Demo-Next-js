@@ -14,7 +14,7 @@ const Footer = () => {
             <>
               <span className={style.linkText}>WORK WITH US</span>
               <Image
-                src=""
+                
                 width="40px"
                 height="40px"
                 alt=""
