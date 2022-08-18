@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import style from '../styles/About.module.css'
+import style from '../styles/ContactPage.module.css'
 import { Container, Box } from '@mui/system'
+import Contact from './components/Contact'
 
 const About = () => {
   return (
@@ -9,32 +10,33 @@ const About = () => {
       <Container>
        <div className={style.container}>
       <Head>
-        <title>About Us</title>
+        <title>Contact Us</title>
         <meta name="description" content="Marktine Technology About Us Page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={style.rightContainer}>
-
-      <h1 className={style.heading}><span style={{color:"green",marginRight:"10px"}}>Who</span>We Are</h1>
+      <h1 className={style.heading}><span style={{color:"green",marginRight:"17px"}}>Get</span>A Quote</h1>
       <div>
       <hr className={style.hr} />
       </div>
       <p className={style.pera}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit voluptatibus distinctio, possimus assumenda dicta eum temporibus aut? Magnam, accusantium!</p>
       </div>
       <div className={style.LeftContainer}>        
-        <div className={style.card}>
+         
         <Image
         className={style.myImage}
-          src="/img/About.png"
+          src="/img/Contact.png"
           objectFit="contain"
           alt=""
           width="500px"
-          height="900px"          
+          height="700px"          
           />
+      
       </div>
-      </div>
-    </div>     
+    </div>  
+    <Contact />   
     </Container>
+
     </Box>
 
   )
