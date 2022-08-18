@@ -1,19 +1,31 @@
+ 
 .container {
     height: 50px;
-    background-color: black;
-    color: white !important;
+    background-color: black;    
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 18px;
     padding: 0px 100px;
     position: relative;
     overflow: hidden;
+    position: sticky;
   }
   .mylink{
     color: white !important;
     text-decoration: none !important;
   }
+  .myList{
+    list-style: none;
+    color: green;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .myList :hover{
+color: white;
+  }
+
   .listItem {
     display: inline;
     margin-right: 30px;
@@ -22,6 +34,10 @@
     color: lightgray;
     cursor: pointer;
     color: white;
+  }
+  .logoHeading{
+    font-weight: 800 !important;
+    color: green !important;
   }
   
   .hamburger {
@@ -37,6 +53,11 @@
     background-color: white;
   }
   
+  .list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
   .menu {
     display: none;
     position: fixed;

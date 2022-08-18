@@ -5,6 +5,9 @@
     overflow: hidden;
     position: relative;
   }
+  .myImage{
+     padding:50px
+  }
   
   .card {
     flex: 1;

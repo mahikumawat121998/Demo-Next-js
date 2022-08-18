@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }) {
 
   return (<>
   <ProductState>
-
     <Layout>
       <Component {...pageProps} />
     </Layout>

@@ -5,13 +5,13 @@ import Circle from "./Circle";
 const Intro = () => {
   return (
     <div className={style.container}>
-      {/* <div className={`${style.circle} ${style.circle1}`} />
-      <div className={`${style.circle} ${style.circle2}`} /> */}
+      <div className={`${style.circle} ${style.circle1}`} />
+      <div className={`${style.circle} ${style.circle2}`} />
       <Circle backgroundColor="#01c686" top="-45vh" left="-45vh" />
-      {/* <Circle backgroundColor="#01c686" right="-40vh" /> */}
+      <Circle backgroundColor="#01c686" right="-40vh" />
       <div className={style.card}>
         <h1 className={style.title}>
-          <span className={style.brandName}>AV0CAD0</span> DIGITAL PRODUCT
+          <span className={style.brandName}>MARKTINE</span> DIGITAL PRODUCT
           AGENCY
         </h1>
         <p className={style.desc}>
@@ -22,10 +22,13 @@ const Intro = () => {
       </div>
       <div className={style.card}>
         <Image
+        className={style.myImage}
           src="/img/Avocado.png"
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
           alt=""
+          height="100px"
+          width="200px"
         />
       </div>
     </div>
