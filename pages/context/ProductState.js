@@ -24,7 +24,7 @@ const ProductState = (props) => {
 
   return (
     <>
-    <ProductContext.Provider value={ {fetchProducts , products , fetchOne, singleProduct, cart , setCart}}>
+    <ProductContext.Provider value={ {fetchProducts , products ,setProducts, fetchOne, singleProduct, cart , setCart}}>
         {props.children}
     </ProductContext.Provider>
     </>

@@ -2,49 +2,48 @@ import React from 'react'
 import style from "../../styles/Footer.module.css"
 import Link from 'next/dist/client/link';
 import Image from 'next/image';
+import { Box, Container } from '@mui/system';
 
-const Footer = () => { 
+const Footer = () => {
 
   return (
-    <div className={style.container}>
-      <div className={style.cardL}>
-        <h1 className={style.title}>AV0CAD0 CREATIVES.</h1>
-        <h1 className={style.linkTitle}>
-          <Link href="/contact" className={style.link} passHref>
-            <>
-              <span className={style.linkText}>WORK WITH US</span>
-              <Image
-                
-                width="40px"
-                height="40px"
-                alt=""
-              />
-            </>
-          </Link>
-        </h1>
+    <Box className={style.Box}>
+      <Container className={style.container}>
+        <div className={style.card}>
+          <h3 className={style.cardtitle}>About Us</h3>
+          <p className={style.pera}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ex qui placeat tenetur optio iure culpa, vel deleniti consequatur inventore sequi, aspernatur suscipit?</p>
+        </div>
+        <div className={style.card}>
+          <h3 className={style.cardtitle}>Quick Link</h3>
+          <ul className='style.ul'>
+            <li className={style.li}><Link href="/"> Home</Link></li>
+            <li className={style.li}><Link href="/about">About Us</Link></li>
+            <li className={style.li}> <Link href="/products">Product</Link></li>
+            <li className={style.li}>  <Link href="/faq">FAQ</Link>  </li>
+            <li className={style.li}> <Link href="/contact">Contact Us</Link></li>
+          </ul>
+        </div>
+         
+        <div className={style.card}>
+          <h3 className={style.cardtitle}>Contact Us</h3>
+           <ul>
+            <li className={style.listItem}>Jaipur, Rajasthan</li>
+            <li className={style.listItem}>mahikumawat121998@gmail.com</li>
+            <li className={style.listItem}> +91 9828107200</li>
+            </ul>
+        </div>
+        <div className={style.card}>
+          <h3 className={style.cardtitle}>Follow On</h3>
+          <span><Image href="img/facebook.png"/></span>
+          <span><Image href="/img/google.png"/></span>
+          <span><Image href="img/yahoo.png"/></span>            
+        </div>
+      </Container>
+      <div className={style.terms}> &#169;
+      2022 Marktine Technology All Reserved Right
       </div>
-      <div className={style.cardS}>
-        <div className={style.cardItem}>
-          45 ADAM STREET,
-          <br /> USA
-        </div>
-        <div className={style.cardItem}>
-          CONTACT@LAMA.DEV
-          <br /> 111_438_5244
-        </div>
-      </div>
-      <div className={style.cardS}>
-        <div className={style.cardItem}>
-          FOLLOW US:
-          <br /> __FB __IN __BE __TW
-        </div>
-        <div className={style.cardItem}>
-          © 2022 LAMA INTERACTIVE,
-          <br />
-          ALL RIGHTS RESERVED
-        </div>
-      </div>
-    </div>
+    </Box>
+
   );
 };
 
@@ -52,8 +51,8 @@ const Footer = () => {
 
 
 
-   
-  
+
+
 
 
 export default Footer

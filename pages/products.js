@@ -5,6 +5,7 @@ import Productcard from './components/Productcard';
 import Searchbar from './components/Searchbar';
 import productContext from './context/productContext';
 
+
 const Products = () => {
     const { fetchProducts, products } = useContext(productContext)
     const [searchItem , setSearchItem] = useState()
@@ -19,6 +20,7 @@ const Products = () => {
 
   return (
     <>
+ 
     <div className={styles.container}>
         <div  className={styles.searchBox}>
             <Searchbar value={searchItem} handleChange={handleChange}  />

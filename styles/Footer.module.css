@@ -1,79 +1,56 @@
-.container {
-    height: 250px;
-    border-top: 3px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 18px;
-    padding: 50px;
-    background-color: black;
+ 
+ .Box{
+  background-color: rgb(19, 18, 18);
+ }
+ .container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+ }
+ .card{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  gap: 5px;
+ }
+ .cardtitle{
+  text-align: center;
+  font-weight: 700;
+  color: #0083A3;
+  letter-spacing: 1px;
+  font-size: 22px;
+ }
+ .ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+ }
+ .li{
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
 
-  }
-  
-  .title {
-    font-weight: 400;
-    color: white;
-    background-color: rgba(0, 128, 0, 0.774);
-    width: max-content;
-    padding: 5px;
-    transition: all 1s ease;
-  }
-  
-  .title:hover {
-    background-color: white;
-    color: rgba(0, 128, 0, 0.774);
-  }
-  
-  .linkTitle {
-    text-decoration: underline;
-    transform-origin: left;
-    transition: all 1s ease;
-  }
-  
-  .linkTitle:hover {
-    transform: scale(1.1);
-  }
-  
-  .link {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .linkText{
-      margin-right: 20px;
-      cursor: pointer;
-      color: white;
-  }
-  
-  .cardL {
-    flex: 2;
-  }
-  
-  .cardS {
-    flex: 1;
-  }
-  
-  .cardItem {
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-align: right;
-    color: white;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .container {
-      height: auto;
-      flex-direction: column;
-    }
-  
-    .title,
-    .linkTitle {
-      font-size: 30px;
-    }
-  
-    .cardItem{
-      text-align: center;
-    }
-  }
-  
+ }
+
+ .terms{
+  color: whitesmoke;
+  font-size: 17px;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  background-color: grey;
+ }
+ .listItem{
+  color: white;
+  list-style: none;
+  padding: 5px 0px;
+ }
+ .pera{
+color: white;
+ }

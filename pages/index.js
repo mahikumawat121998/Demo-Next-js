@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Intro from './components/Intro'
 import Services from './components/Services'
-
+import Contact from './components/Contact'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -14,6 +14,7 @@ export default function Home() {
       </Head>          
      <Intro/>  
      <Services/>
+     <Contact/>
     </div>
   )
 }

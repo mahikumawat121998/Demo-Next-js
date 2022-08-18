@@ -63,8 +63,8 @@ const Productcard = (props) => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button onClick={()=>{handleClick(product.id)}}>More Details</Button>
-                    <Button onClick={()=>{handleAdd(product)}}>Add to Cart</Button>
+                    <Button variant="contained" size="small" color="primary" onClick={()=>{handleClick(product.id)}}>More Details</Button>
+                    <Button variant="contained" color="success" size="small"  onClick={()=>{handleAdd(product)}}>Add to Cart</Button>
                 </CardActions>
             </Card>
      
