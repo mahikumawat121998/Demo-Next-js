@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Image from 'next/dist/client/image'
-import style from "../../styles/Services.module.css"
+import style from "../styles/Services.module.css"
 
 
 import Box from '@mui/material/Box';

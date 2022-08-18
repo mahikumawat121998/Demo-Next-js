@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "../../styles/Contact.module.css"
+import style from "../styles/Contact.module.css"
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import HomeIcon from '@mui/icons-material/Home';

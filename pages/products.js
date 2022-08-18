@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react'
 import { useState } from 'react';
 import styles from "../styles/Products.module.css";
-import Productcard from './components/Productcard';
-import Searchbar from './components/Searchbar';
-import productContext from './context/productContext';
+import Productcard from '../components/Productcard';
+import Searchbar from '../components/Searchbar';
+import productContext from '../context/productContext';
 import Head from 'next/head';
 
 const Products = () => {

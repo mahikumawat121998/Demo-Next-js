@@ -1,5 +1,5 @@
 import { useContext, useState,useEffect } from "react";
-import style from "../../styles/Navbar.module.css";
+import style from "../styles/Navbar.module.css";
 import Link from "next/link";
 import { Box } from "@mui/material";
 import productContext from "../context/productContext";
