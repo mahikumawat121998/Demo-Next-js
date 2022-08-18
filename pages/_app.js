@@ -1,6 +1,6 @@
 import '../styles/globals.css'
-import Layout from "../pages/components/Layout"
-import ProductState from './context/ProductState';
+import Layout from "../components/Layout"
+import ProductState from '../context/ProductState';
 
 
 

@@ -1,4 +1,4 @@
-import style from "../../styles/Intro.module.css";
+import style from "../styles/Intro.module.css";
 import Image from "next/image";
 import Circle from "./Circle";
 

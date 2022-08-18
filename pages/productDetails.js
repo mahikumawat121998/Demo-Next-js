@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import productContext from './context/productContext'
+import productContext from '../context/productContext'
 import styles from "../styles/Products.module.css";
-import MyButton from './components/myButton';
+import MyButton from '../components/myButton';
 
 
 

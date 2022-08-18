@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import style from '../styles/ContactPage.module.css'
 import { Container, Box } from '@mui/system'
-import Contact from './components/Contact'
+import Contact from '../components/Contact'
 
 const About = () => {
     return (
