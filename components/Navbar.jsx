@@ -9,6 +9,7 @@ const Navbar = () => {
   const {cart ,setCart} = useContext(productContext)
   const [open, setOpen] = useState(false);
   useEffect(()=>{
+  
   const abc =  window.localStorage.getItem('cart')
   setCart(JSON.parse(abc))
   },[])
