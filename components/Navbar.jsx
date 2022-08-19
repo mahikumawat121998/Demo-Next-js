@@ -49,8 +49,16 @@ const Navbar = () => {
           </li>          
         </ul>
         <ul  >
-          <li className={style.listItem}>
-            <Link style={{ color: "white" }} href="/cart"><AddShoppingCartIcon style={{color:"white",verticalAlign:"middle"}} /></Link><span className={style.cartNumber}>{!cart.totalItems ? 0 : cart.totalItems}</span>
+          <li>
+            <Link style={{ color: "white" }} href="/cart"><AddShoppingCartIcon style={{color:"white",verticalAlign:"middle"}} /></Link>            
+            {/* <span className={style.cartNumber}>
+              
+              {!cart.totalItems ? 0 : cart.totalItems}
+              Cart
+              
+              </span> */}
+              <span style={{color:"white", cursor:"pointer"}}>Cart</span>
+
           </li>
         </ul>
       </div>
