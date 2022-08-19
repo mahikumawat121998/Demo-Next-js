@@ -50,14 +50,16 @@ const Navbar = () => {
         </ul>
         <ul  >
           <li>
-            <Link style={{ color: "white" }} href="/cart"><AddShoppingCartIcon style={{color:"white",verticalAlign:"middle"}} /></Link>            
+            <Link style={{ color: "white" }} href="/cart"><AddShoppingCartIcon style={{color:"white",verticalAlign:"middle", cursor:"pointer"}} />
+            </Link>     
+            <span style={{color:"white"}}>Cart</span>
+
             {/* <span className={style.cartNumber}>
               
               {!cart.totalItems ? 0 : cart.totalItems}
               Cart
               
               </span> */}
-              <span style={{color:"white", cursor:"pointer"}}>Cart</span>
 
           </li>
         </ul>
