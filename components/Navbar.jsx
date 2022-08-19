@@ -9,13 +9,13 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 const Navbar = () => {
   const { cart, setCart } = useContext(productContext)
   const [open, setOpen] = useState(false);
-  useEffect(() => {
-    const abc = window.localStorage.getItem('cart')
-    setCart(JSON.parse(abc))
-  }, [])
-  useEffect(() => {
-    window.localStorage.setItem('cart', JSON.stringify(cart))
-  }, [cart])
+  useEffect(()=>{
+  const abc =  window.localStorage.getItem('cart')
+  setCart(JSON.parse(abc))
+  },[])
+  useEffect(()=>{
+    window.localStorage.setItem('cart',JSON.stringify(cart))
+  },[cart])
 
   return (
     <Box className={style.mainContainer}>
