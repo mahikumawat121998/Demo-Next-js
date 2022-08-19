@@ -1,0 +1,37 @@
+.container{
+    display: flex;   
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+.title{
+    color: green;
+}
+.subContainer{
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.myheading{
+    
+    font-size: 43px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.myhr{
+    width: max-content;
+    background-color: green;
+    height: 10px;
+    width: 600px;
+     text-align: left;
+     margin-left:0 ;
+    
+}
+.myhrdiv{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+    
+ 

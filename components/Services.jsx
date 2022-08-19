@@ -34,11 +34,11 @@ const Services = () => {
                         <h4>Communication</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum velit eveniet doloribus voluptatum, magnam voluptate quod commodi earum. Incidunt totam autem architecto.</p>
 
-                        <Button variant="contained">Contained</Button>
+                        <Button variant="contained">Click Me</Button>
                     </div>
                     <div className={style.cardItem}>
                         <Image
-                            src="/img/Avocado.png"
+                            src="/img/Services1.png"
                         
                             width="150px"
                             height="200px"
@@ -47,11 +47,11 @@ const Services = () => {
                         <h4>Inspired Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum velit eveniet doloribus voluptatum, magnam voluptate quod commodi earum. Incidunt totam autem architecto.</p>
 
-                        <Button variant="contained">Contained</Button>
+                        <Button variant="contained">Click Me</Button>
                     </div>
                     <div className={style.cardItem}>
                         <Image
-                            src="/img/Avocado.png"
+                            src="/img/Services.png"
                             width="150px"
                             height="200px"
                             objectFit='cover'
@@ -59,7 +59,7 @@ const Services = () => {
                         <h4>Happy Customers </h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum velit eveniet doloribus voluptatum, magnam voluptate quod commodi earum. Incidunt totam autem architecto.</p>
 
-                        <Button variant="contained">Contained</Button>
+                        <Button variant="contained">Click Me</Button>
                     </div>
                 </div>
             </Container>
