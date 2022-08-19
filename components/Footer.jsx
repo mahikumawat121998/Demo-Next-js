@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <Box className={style.Box}>
-      <Container className={style.container}>
+      <Container className={style.container} style={{display:"flex"}}>
         <div className={style.card}>
           <h3 className={style.cardtitle}>About Us</h3>
           <p className={style.pera}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ex qui placeat tenetur optio iure culpa, vel deleniti consequatur inventore sequi, aspernatur suscipit?</p>
