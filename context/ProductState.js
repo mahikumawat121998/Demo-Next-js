@@ -5,8 +5,10 @@ const ProductState = (props) => {
   const [products, setProducts] = useState([]);
   const [singleProduct, setSingleproduct] = useState([]);
   const [cart, setCart] = useState({ items: "", totalItems: "" });
+  const [isloading , setIsloading] = useState(false)
 
   const fetchProducts = async () => {
+    setIsloading(true)
     await fetch("https://fakestoreapi.com/products")
       .then((res) => {
         return res.json();
@@ -14,6 +16,7 @@ const ProductState = (props) => {
       .then((data) => {
         setProducts(data);
       });
+      setIsloading(false)
   };
 
   const fetchOne = (id) => {
@@ -37,6 +40,7 @@ const ProductState = (props) => {
           singleProduct,
           cart,
           setCart,
+          isloading
         }}
       >
         {props.children}

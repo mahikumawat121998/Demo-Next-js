@@ -6,10 +6,11 @@ import Searchbar from "../components/Searchbar";
 import productContext from "../context/productContext";
 import Head from "next/head";
 import NextNProgress from "nextjs-progressbar";
+import Spinner from "../components/Spinner";
 
 const Products = () => {
-  const [isloading , setIsloading] = useState(false)
-  const { fetchProducts, products } = useContext(productContext);
+  
+  const { fetchProducts, products ,isloading} = useContext(productContext);
   const [searchItem, setSearchItem] = useState();
 
   useEffect(() => {
@@ -37,7 +38,9 @@ const Products = () => {
                 stopDelayMs={200}
                 height={4}
                 showOnShallow={true}/>
-
+        <div className={styles.spinner}>
+             {isloading && <Spinner/>}
+        </div>
         
         <div className={styles.searchBox}>
           <Searchbar value={searchItem} handleChange={handleChange} />
@@ -55,3 +58,5 @@ const Products = () => {
 };
 
 export default Products;
+
+
