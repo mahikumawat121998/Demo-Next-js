@@ -1,9 +1,13 @@
 import React from 'react'
+import style from "../styles/Spiner.module.css"
+
 
 const Spinner = () => {
   return (
-    <div>
-        <img src="img/loading.gif" alt="" />
+    <div className={style.mainContainer}>
+      <div className={style.spiner}>
+      {/* <img  src="img/loading.gif" alt="sppiner" /> */}
+      </div>
     </div>
   )
 }

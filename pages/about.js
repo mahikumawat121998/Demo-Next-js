@@ -14,24 +14,18 @@ const About = () => {
             <link rel="icon" href="/favicon.ico" />
           </Head>
           <div className={style.rightContainer}>
-
             <h1 className={style.heading}><span style={{ color: "green", marginRight: "10px" }}>Who</span>We Are</h1>
             <div>
               <hr className={style.hr} />
             </div>
             <p className={style.pera}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit voluptatibus distinctio, possimus assumenda dicta eum temporibus aut? Magnam, accusantium!</p>
           </div>
-          <div className={style.LeftContainer}>
-            <div className={style.card}>
-              <Image
+          <div className={style.LeftContainer}>            
+              <img
                 className={style.myImage}
                 src="/img/About.png"
-                objectFit="contain"
-                alt=""
-                width="500px"
-                height="900px"
-              />
-            </div>
+                
+              />            
           </div>
         </div>
       </Container>
