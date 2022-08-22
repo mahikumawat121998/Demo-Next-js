@@ -1,0 +1,19 @@
+.mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    /* height: 100vh; */
+    position: relative;
+    background-color: white;
+    
+}
+.spiner{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('/img/loading.gif') 
+                50% 50% no-repeat rgba(249, 249, 249, 0.945);
+}
